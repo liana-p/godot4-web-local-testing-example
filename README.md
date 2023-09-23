@@ -21,3 +21,13 @@ I made a simple node.js server using Express which can serve an exported Godot g
 5. Run `npm install` (only needed the first time)
 6. Run `npm start` to start the server
 7. Open `http://localhost:3000` in your browser to view the game
+
+## Setup on an existing project
+
+The actual web server part of this is what's in the `export` folder. If you copy the `export` folder to your game, and create the `public` directory in it, you should be able to run this setup on an existing game.
+
+1. Download or clone this repo somewhere
+2. Copy the `export` folder to your Godot project
+3. Create the `public` directory
+4. Edit your Godot web export settings to export to `export/public/index.html`
+5. Run the web server in `export` as explained above
